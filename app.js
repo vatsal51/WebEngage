@@ -63,12 +63,14 @@ console.log(has)
 const product = urlParams.get('ayush');
 console.log(product)
 if (has) {
-document.getElementById(product).checked = true;
+var checked = document.getElementById(product).checked = true;
 document.querySelectorAll("input[type='radio']").forEach(radi => {
 	document.getElementById(radi.id).disabled = true;
 	document.getElementById(product).disabled=false;
 console.log(radi.id)
 });
+document.querySelectorAll('input[type="radio"]').disabled = true;
+// document.getElementById(product).disabled=true;
 };
 }
 rad();
