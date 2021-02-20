@@ -32,7 +32,7 @@ document.querySelectorAll('button').forEach(group => {
 // console.log(group.id);
 document.getElementById(group.id).classList.remove("copied");
 });
-console.log(event.target.id);
+// console.log(event.target.id);
 document.getElementById(event.target.id).classList.add("copied");
 document.getElementById(event.target.id).innerHTML = "copied"
 });
@@ -54,32 +54,28 @@ document.body.removeChild(el);
 function rad() {
 
 var nurl = window.location.href;
-console.log(nurl)
+// console.log(nurl)
 var x = location.search;
-console.log(x)
+// console.log(x)
 const urlParams = new URLSearchParams(x);
 const has = urlParams.has('ayush')
-console.log(has)
+// console.log(has)
 const product = urlParams.get('ayush');
-console.log(product)
+// console.log(product)
 if (has) {
 var checked = document.getElementById(product).checked = true;
 document.querySelectorAll("input[type='radio']").forEach(radi => {
 	document.getElementById(radi.id).disabled = true;
 	document.getElementById(product).disabled=false;
-console.log(radi.id)
+// console.log(radi.id)
 });
 document.querySelectorAll('input[type="radio"]').disabled = true;
 // document.getElementById(product).disabled=true;
 };
 }
 rad();
-// var url = new URL(url_string);
-// var c = url.searchParams.get("c");
 
 document.getElementById("close").addEventListener('click', function () {
-// document.querySelector(".banner").classList.add("hide");
-// document.querySelector(".banner").classList.remove("banner");
 document.querySelector(".banner").classList.remove("change");
 
 }) 
