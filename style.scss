@@ -35,7 +35,9 @@ cursor: pointer;
 background: grey;
 }
 }
-
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 10px #fff}
+::-webkit-scrollbar-thumb{background-color:#8268F5}
 .banner {
 #close {
 text-align: center;
@@ -67,7 +69,7 @@ opacity: 1;
 box-shadow: 0 5px 25px -15px black;
 @media screen and (max-width: 768px) {
 height: 350px;
-overflow: scroll;
+overflow: auto;
 }
 }
 .container {
